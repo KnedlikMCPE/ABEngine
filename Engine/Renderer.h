@@ -2,15 +2,16 @@
 #include "Macros.h"
 
 class Window;
+struct GLFWwindow;
 
-enum class RENDERER_EXPORT RendererErrors
+enum class AB_EXPORT RendererErrors
 {
 	Okay,
 	Terminate,
 	WindowNullptr,
 };
 
-class RENDERER_EXPORT Renderer
+class AB_EXPORT Renderer
 {
 public:
 	bool shouldClose;
@@ -18,6 +19,8 @@ public:
 	Renderer(int width, int height, const char* title);
 	~Renderer();
 	RendererErrors Render();
+	GLFWwindow* GetWindow();
+	void Close();
 private:
 	Window* window;
 };

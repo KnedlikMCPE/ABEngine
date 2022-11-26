@@ -1,4 +1,4 @@
-#include "Renderer.h"
+#include "Input.h"
 
 int main()
 {
@@ -6,6 +6,10 @@ int main()
 	while (!renderer->shouldClose)
 	{
 		renderer->Render();
+		if (Input::IsPressed(KEY_ESCAPE, renderer))
+		{
+			renderer->Close();
+		}
 	}
 	delete renderer;
 }
