@@ -138,12 +138,18 @@
     <ClInclude Include="Input.h" />
     <ClInclude Include="Macros.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderObject.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="VertexBuffer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderObject.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
