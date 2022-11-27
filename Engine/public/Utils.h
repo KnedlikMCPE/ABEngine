@@ -8,6 +8,7 @@ namespace ABEngine
 {
 	class AB_EXPORT Utils
 	{
+	public:
 		static std::string ReadFile(std::string path);
 	};
 }

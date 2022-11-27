@@ -673,6 +673,9 @@
     <Library Include="lib\glfw3dll.lib" />
     <Library Include="lib\glfw3_mt.lib" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="shaders\Vertex.vs" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
