@@ -10,9 +10,3 @@ std::string ABEngine::Utils::ReadFile(std::string path)
 	return buffer.str();
 }
 
-std::vector<float> ABEngine::Utils::vectorFromArray(float arrayIn[])
-{
-	int n = sizeof(arrayIn) / sizeof(arrayIn[0]);
-	return std::vector<float>(arrayIn, arrayIn + n);
-}
-

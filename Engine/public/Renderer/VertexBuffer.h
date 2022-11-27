@@ -5,6 +5,7 @@ class VertexBuffer
 {
 public:
 	VertexBuffer(RenderObject data);
+	VertexBuffer() {}
 	unsigned int GetVBO();
 	void Bind();
 

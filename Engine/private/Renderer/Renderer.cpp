@@ -1,10 +1,12 @@
-#include "Renderer.h"
-#include "Window.h"
+#include "Renderer/Renderer.h"
+#include "Renderer/VertexBuffer.h"
+#include "Renderer/RenderObject.h"
+#include "Renderer/Window.h"
 
 Renderer::Renderer(int width, int height, const char* title)
 {
 	window = new Window(width, height, title);
-	VBO = VertexBuffer(RenderObject());
+	VBO = new VertexBuffer(RenderObject({-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f}));
 }
 
 
@@ -12,6 +14,7 @@ Renderer::Renderer(int width, int height, const char* title)
 Renderer::~Renderer()
 {
 	delete window;
+	delete VBO;
 }
 
 

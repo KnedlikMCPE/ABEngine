@@ -4,5 +4,6 @@
 struct RenderObject
 {
 	std::vector<float> vertices;
-	RenderObject(float vertIn[]);
+	RenderObject(std::vector<float> vertIn);
+	RenderObject() {}
 };

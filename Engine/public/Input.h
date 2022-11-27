@@ -1,5 +1,5 @@
 #pragma once
-#include "Renderer.h"
+#include "Macros.h"
 
 #define KEY_UNKNOWN -1
 #define KEY_SPACE 32
@@ -123,6 +123,8 @@
 #define KEY_RIGHT_SUPER   347
 #define KEY_MENU   348
 #define KEY_LAST   KEY_MENU
+
+class Renderer;
 
 class AB_EXPORT Input
 {
