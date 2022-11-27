@@ -20,6 +20,9 @@
     <ClCompile Include="Shader.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -41,6 +44,9 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="Shader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,6 +140,7 @@
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RenderObject.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="VertexBuffer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
@@ -149,6 +150,7 @@
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RenderObject.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Utils.cpp" />
     <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>

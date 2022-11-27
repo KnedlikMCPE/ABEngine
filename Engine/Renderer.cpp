@@ -4,6 +4,7 @@
 Renderer::Renderer(int width, int height, const char* title)
 {
 	window = new Window(width, height, title);
+	VBO = VertexBuffer(RenderObject());
 }
 
 

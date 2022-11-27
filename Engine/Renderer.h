@@ -1,17 +1,18 @@
 #pragma once
+#include "VertexBuffer.h"
 #include "Macros.h"
 
 class Window;
 struct GLFWwindow;
 
-enum class AB_EXPORT RendererErrors
+enum class RendererErrors
 {
 	Okay,
 	Terminate,
 	WindowNullptr,
 };
 
-class AB_EXPORT Renderer
+class Renderer
 {
 public:
 	bool shouldClose;
@@ -23,5 +24,6 @@ public:
 	void Close();
 private:
 	Window* window;
+	VertexBuffer VBO;
 };
 
