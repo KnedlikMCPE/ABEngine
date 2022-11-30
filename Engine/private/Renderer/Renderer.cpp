@@ -15,7 +15,8 @@ Renderer::Renderer(int width, int height, const char* title)
 	VAO->Bind();
 	
 	VBO = new VertexBuffer();
-	VBO->AddAttributes({-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f}, 3);
+	VBO->AddData({-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f});
+	VBO->AddAttributes();
 	
 	shader = Shader();
 	shader.CompileVertex("shaders/Vertex.vert");

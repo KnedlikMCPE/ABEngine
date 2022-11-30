@@ -8,9 +8,13 @@ public:
 	unsigned int GetVBO();
 	void Bind();
 
-	void AddAttributes(std::vector<float> content, int stride);
+	void AddData(std::vector<float> data);
+	void AddAttributes();
 protected:
 	unsigned int VBO;
-	int dataLength;
+	int stride;
 	int numData;
+	std::vector<float> content;
+
+	void BufferData();
 };
