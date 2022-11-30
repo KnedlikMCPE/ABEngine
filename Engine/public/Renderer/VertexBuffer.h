@@ -4,15 +4,13 @@
 class VertexBuffer
 {
 public:
-	VertexBuffer(RenderObject data);
-	VertexBuffer() {}
+	VertexBuffer();
 	unsigned int GetVBO();
 	void Bind();
 
-	RenderObject GetData();
-	void SetData(RenderObject value);
+	void AddAttributes(std::vector<float> content, int stride);
 protected:
 	unsigned int VBO;
-	RenderObject data;
+	int dataLength;
+	int numData;
 };
-

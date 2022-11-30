@@ -1,12 +1,13 @@
 #include "Renderer/VertexBuffer.h"
 #include <glad/glad.h>
 
-VertexBuffer::VertexBuffer(RenderObject dataIn)
+VertexBuffer::VertexBuffer()
 {
 	glGenBuffers(1, &VBO);
+	dataLength = 0;
+	numData = 0;
 
 	Bind();
-	SetData(dataIn);
 }
 
 unsigned VertexBuffer::GetVBO()
@@ -19,14 +20,15 @@ void VertexBuffer::Bind()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 }
 
-RenderObject VertexBuffer::GetData()
+void VertexBuffer::AddAttributes(std::vector<float> content, int stride)
 {
-	return data;
-}
-
-void VertexBuffer::SetData(RenderObject value)
-{
-	data = value;
 	Bind();
-	glBufferData(GL_ARRAY_BUFFER, sizeof(data.vertices.data()), data.vertices.data(), GL_STATIC_DRAW);
+
+	glBufferData(GL_ARRAY_BUFFER, sizeof(content), content.data(), GL_STATIC_DRAW);
+	glVertexAttribPointer(numData, 3, GL_FLOAT, GL_FALSE, stride * sizeof(float),
+    (void*)dataLength);
+    glEnableVertexAttribArray(0);
+
+	dataLength += sizeof(content.data());
+	numData++;
 }

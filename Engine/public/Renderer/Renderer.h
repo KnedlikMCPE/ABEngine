@@ -3,6 +3,7 @@
 
 class Window;
 class VertexBuffer;
+class VertexArray;
 struct GLFWwindow;
 
 enum class RendererErrors
@@ -25,5 +26,8 @@ public:
 private:
 	Window* window;
 	VertexBuffer* VBO;
+	VertexArray* VAO;
+
+	void Draw();
 };
 
