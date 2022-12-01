@@ -1,3 +1,4 @@
+
 #include "Renderer/Renderer.h"
 #include "Renderer/VertexBuffer.h"
 #include "Renderer/RenderObject.h"
@@ -5,23 +6,35 @@
 #include "Renderer/Window.h"
 #include "Renderer/VertexArray.h"
 #include "Vector3.h"
+#include "Renderer/Texture.h"
 
 Shader shader;
+Texture face;
+Texture container;
 
 Renderer::Renderer(int width, int height, const char* title)
 {
 	window = new Window(width, height, title);
 
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
 	VAO = new VertexArray();
 	VAO->Bind();
 	
 	VBO = new VertexBuffer();
-	VBO->AddAttributes({0.5f, -0.5f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f}, 3, {3});
+	VBO->AddAttributes({0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f}, 5, {3, 2});
 	
 	shader = Shader();
 	shader.CompileVertex("shaders/Vertex.vert");
 	shader.CompileFragment("shaders/Fragment.frag");
 	shader.CompileProgram();
+
+	face = Texture("textures/awesomeface.png");
+	container = Texture("textures/container.jpg");
 }
 
 
@@ -60,8 +73,8 @@ RendererErrors Renderer::Render()
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	shader.Use();
+	container.Bind();
 	VAO->Bind();
-	shader.UseUniform("ourColor", Vector3(1.0, 0.2, 0.0));
 	Draw();
 
 	return RendererErrors::Okay;
