@@ -31,7 +31,7 @@ void VertexBuffer::AddAttributes(std::vector<float> data, int stride, std::vecto
 	for (int i = 0; i <= numData; i++)
 	{
 		glVertexAttribPointer(i, sizes.data()[i], GL_FLOAT, GL_FALSE, stride * sizeof(float),
-		(void*)(i * sizeData));
+		(void*)(i * sizeData * sizeof(float)));
 		glEnableVertexAttribArray(i);
 		sizeData += sizes.data()[i];
 	}
