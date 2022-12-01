@@ -15,7 +15,7 @@ Renderer::Renderer(int width, int height, const char* title)
 	VAO->Bind();
 	
 	VBO = new VertexBuffer();
-	VBO->AddData({-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f});
+	VBO->AddData({0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f}, 6);
 	VBO->AddAttributes();
 	
 	shader = Shader();

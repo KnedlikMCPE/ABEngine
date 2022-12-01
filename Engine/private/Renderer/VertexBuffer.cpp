@@ -1,4 +1,6 @@
 #include "Renderer/VertexBuffer.h"
+
+#include <iostream>
 #include <glad/glad.h>
 
 VertexBuffer::VertexBuffer()
@@ -20,14 +22,11 @@ void VertexBuffer::Bind()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 }
 
-void VertexBuffer::AddData(std::vector<float> data)
+void VertexBuffer::AddData(std::vector<float> data, int strideIn)
 {
-	for (auto dat : data)
-	{
-		content.push_back(dat);
-	}
-	stride += 3;
-	numData++;
+	content = data;
+	stride = strideIn;
+	numData = stride / 3;
 }
 
 void VertexBuffer::AddAttributes()
@@ -44,6 +43,5 @@ void VertexBuffer::AddAttributes()
 void VertexBuffer::BufferData()
 {
 	Bind();
-
 	glBufferData(GL_ARRAY_BUFFER, sizeof(float) * content.size(), content.data(), GL_STATIC_DRAW);
 }

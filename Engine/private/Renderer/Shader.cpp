@@ -84,3 +84,18 @@ void Shader::Use()
 {
     glUseProgram(program);
 }
+
+void Shader::UseUniform(std::string name, bool value)
+{
+    glUniform1i(glGetUniformLocation(program, name.c_str()), (int)value);
+}
+
+void Shader::UseUniform(std::string name, float value)
+{
+    glUniform1f(glGetUniformLocation(program, name.c_str()), value);
+}
+
+void Shader::UseUniform(std::string name, int value)
+{
+    glUniform1i(glGetUniformLocation(program, name.c_str()), value);
+}
