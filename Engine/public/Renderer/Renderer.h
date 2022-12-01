@@ -4,6 +4,7 @@
 class Window;
 class VertexBuffer;
 class VertexArray;
+class ElementBuffer;
 struct GLFWwindow;
 
 enum class RendererErrors
@@ -27,6 +28,7 @@ private:
 	Window* window;
 	VertexBuffer* VBO;
 	VertexArray* VAO;
+	ElementBuffer* EBO;
 
 	void Draw();
 };

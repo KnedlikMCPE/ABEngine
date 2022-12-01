@@ -4,6 +4,8 @@
 class Texture
 {
 public:
+    int num;
+    
     Texture(std::string path);
     Texture() {}
     void Bind();

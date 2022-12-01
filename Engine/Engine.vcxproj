@@ -37,10 +37,10 @@
       <Optimization>Disabled</Optimization>
       <SupportJustMyCode>true</SupportJustMyCode>
       <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</AssemblerListingLocation>
+      <AssemblerListingLocation>$(SolutionDir)temp\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
       <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</BrowseInformationFile>
+      <BrowseInformationFile>$(SolutionDir)temp\</BrowseInformationFile>
       <CompileAs>Default</CompileAs>
       <ConformanceMode>true</ConformanceMode>
       <DiagnosticsFormat>Column</DiagnosticsFormat>
@@ -63,37 +63,37 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ModuleDependenciesFile>
-      <ModuleOutputFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ModuleOutputFile>
+      <ModuleDependenciesFile>$(SolutionDir)temp\</ModuleDependenciesFile>
+      <ModuleOutputFile>$(SolutionDir)temp\</ModuleOutputFile>
       <OmitDefaultLibName>false</OmitDefaultLibName>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <ObjectFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ObjectFileName>
+      <ObjectFileName>$(SolutionDir)temp\</ObjectFileName>
       <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\vc143.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)temp\vc143.pdb</ProgramDataBaseFileName>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\Engine.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)temp\Engine.pch</PrecompiledHeaderOutputFile>
       <PreprocessToFile>false</PreprocessToFile>
       <PreprocessKeepComments>false</PreprocessKeepComments>
       <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
       <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
       <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</SourceDependenciesFile>
+      <SourceDependenciesFile>$(SolutionDir)temp\</SourceDependenciesFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <SpectreMitigation>false</SpectreMitigation>
       <StructMemberAlignment>Default</StructMemberAlignment>
-      <TrackerLogDirectory>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\Engine.tlog\</TrackerLogDirectory>
+      <TrackerLogDirectory>$(SolutionDir)temp\Engine.tlog\</TrackerLogDirectory>
       <TranslateIncludes>false</TranslateIncludes>
       <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
       <TreatWarningAsError>false</TreatWarningAsError>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <UseFullPaths>true</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</XMLDocumentationFileName>
+      <XMLDocumentationFileName>$(SolutionDir)temp\</XMLDocumentationFileName>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <IntelJCCErratum>false</IntelJCCErratum>
       <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
@@ -102,7 +102,7 @@
       <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
       <PreprocessorDefinitions>_DEBUG;CPPDYNAMICLIBRARYTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;_WINDLL;_UNICODE;UNICODE;</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalModuleDependencies>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\/Engine/lib/;</AdditionalModuleDependencies>
+      <AdditionalModuleDependencies>$(SolutionDir)/Engine/lib/;</AdditionalModuleDependencies>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="private\Renderer\Renderer.cpp" />
@@ -114,10 +114,10 @@
       <Optimization>Disabled</Optimization>
       <SupportJustMyCode>true</SupportJustMyCode>
       <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</AssemblerListingLocation>
+      <AssemblerListingLocation>$(SolutionDir)temp\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
       <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</BrowseInformationFile>
+      <BrowseInformationFile>$(SolutionDir)temp\</BrowseInformationFile>
       <CompileAs>Default</CompileAs>
       <ConformanceMode>true</ConformanceMode>
       <DiagnosticsFormat>Column</DiagnosticsFormat>
@@ -140,37 +140,37 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ModuleDependenciesFile>
-      <ModuleOutputFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ModuleOutputFile>
+      <ModuleDependenciesFile>$(SolutionDir)temp\</ModuleDependenciesFile>
+      <ModuleOutputFile>$(SolutionDir)temp\</ModuleOutputFile>
       <OmitDefaultLibName>false</OmitDefaultLibName>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <ObjectFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ObjectFileName>
+      <ObjectFileName>$(SolutionDir)temp\</ObjectFileName>
       <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\vc143.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)temp\vc143.pdb</ProgramDataBaseFileName>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\Engine.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)temp\Engine.pch</PrecompiledHeaderOutputFile>
       <PreprocessToFile>false</PreprocessToFile>
       <PreprocessKeepComments>false</PreprocessKeepComments>
       <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
       <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
       <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</SourceDependenciesFile>
+      <SourceDependenciesFile>$(SolutionDir)temp\</SourceDependenciesFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <SpectreMitigation>false</SpectreMitigation>
       <StructMemberAlignment>Default</StructMemberAlignment>
-      <TrackerLogDirectory>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\Engine.tlog\</TrackerLogDirectory>
+      <TrackerLogDirectory>$(SolutionDir)temp\Engine.tlog\</TrackerLogDirectory>
       <TranslateIncludes>false</TranslateIncludes>
       <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
       <TreatWarningAsError>false</TreatWarningAsError>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <UseFullPaths>true</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</XMLDocumentationFileName>
+      <XMLDocumentationFileName>$(SolutionDir)temp\</XMLDocumentationFileName>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <IntelJCCErratum>false</IntelJCCErratum>
       <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
@@ -179,7 +179,7 @@
       <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
       <PreprocessorDefinitions>_DEBUG;CPPDYNAMICLIBRARYTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;_WINDLL;_UNICODE;UNICODE;</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalModuleDependencies>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\/Engine/lib/;</AdditionalModuleDependencies>
+      <AdditionalModuleDependencies>$(SolutionDir)/Engine/lib/;</AdditionalModuleDependencies>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="private\Renderer\VertexArray.cpp" />
@@ -192,10 +192,10 @@
       <Optimization>Disabled</Optimization>
       <SupportJustMyCode>true</SupportJustMyCode>
       <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</AssemblerListingLocation>
+      <AssemblerListingLocation>$(SolutionDir)temp\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
       <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</BrowseInformationFile>
+      <BrowseInformationFile>$(SolutionDir)temp\</BrowseInformationFile>
       <CompileAs>Default</CompileAs>
       <ConformanceMode>true</ConformanceMode>
       <DiagnosticsFormat>Column</DiagnosticsFormat>
@@ -218,37 +218,37 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ModuleDependenciesFile>
-      <ModuleOutputFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ModuleOutputFile>
+      <ModuleDependenciesFile>$(SolutionDir)temp\</ModuleDependenciesFile>
+      <ModuleOutputFile>$(SolutionDir)temp\</ModuleOutputFile>
       <OmitDefaultLibName>false</OmitDefaultLibName>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <ObjectFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</ObjectFileName>
+      <ObjectFileName>$(SolutionDir)temp\</ObjectFileName>
       <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\vc143.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)temp\vc143.pdb</ProgramDataBaseFileName>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\Engine.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)temp\Engine.pch</PrecompiledHeaderOutputFile>
       <PreprocessToFile>false</PreprocessToFile>
       <PreprocessKeepComments>false</PreprocessKeepComments>
       <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
       <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
       <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</SourceDependenciesFile>
+      <SourceDependenciesFile>$(SolutionDir)temp\</SourceDependenciesFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <SpectreMitigation>false</SpectreMitigation>
       <StructMemberAlignment>Default</StructMemberAlignment>
-      <TrackerLogDirectory>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\Engine.tlog\</TrackerLogDirectory>
+      <TrackerLogDirectory>$(SolutionDir)temp\Engine.tlog\</TrackerLogDirectory>
       <TranslateIncludes>false</TranslateIncludes>
       <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
       <TreatWarningAsError>false</TreatWarningAsError>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <UseFullPaths>true</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\temp\</XMLDocumentationFileName>
+      <XMLDocumentationFileName>$(SolutionDir)temp\</XMLDocumentationFileName>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <IntelJCCErratum>false</IntelJCCErratum>
       <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
@@ -257,7 +257,7 @@
       <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
       <PreprocessorDefinitions>_DEBUG;CPPDYNAMICLIBRARYTEMPLATE_EXPORTS;_WINDOWS;_USRDLL;_WINDLL;_UNICODE;UNICODE;</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalModuleDependencies>C:\Users\14Koudelka.Stepan\Documents\GitHub\ABEngine\/Engine/lib/;</AdditionalModuleDependencies>
+      <AdditionalModuleDependencies>$(SolutionDir)/Engine/lib/;</AdditionalModuleDependencies>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
   </ItemGroup>

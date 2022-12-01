@@ -1,12 +1,11 @@
-
 #include "Renderer/Renderer.h"
 #include "Renderer/VertexBuffer.h"
 #include "Renderer/RenderObject.h"
 #include "Renderer/Shader.h"
 #include "Renderer/Window.h"
 #include "Renderer/VertexArray.h"
-#include "Vector3.h"
 #include "Renderer/Texture.h"
+#include "Renderer/ElementBuffer.h"
 
 Shader shader;
 Texture face;
@@ -27,14 +26,21 @@ Renderer::Renderer(int width, int height, const char* title)
 	
 	VBO = new VertexBuffer();
 	VBO->AddAttributes({0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f}, 5, {3, 2});
+
+	EBO = new ElementBuffer( {0, 1, 3, 1, 2, 3});
 	
 	shader = Shader();
 	shader.CompileVertex("shaders/Vertex.vert");
 	shader.CompileFragment("shaders/Fragment.frag");
 	shader.CompileProgram();
+	shader.Use();
 
 	face = Texture("textures/awesomeface.png");
+	face.num = 1;
 	container = Texture("textures/container.jpg");
+
+	shader.UseUniform("tex1", container.num);
+	shader.UseUniform("tex2", face.num);
 }
 
 
@@ -44,6 +50,7 @@ Renderer::~Renderer()
 	delete window;
 	delete VBO;
 	delete VAO;
+	delete EBO;
 }
 
 
@@ -74,8 +81,9 @@ RendererErrors Renderer::Render()
 
 	shader.Use();
 	container.Bind();
+	face.Bind();
 	VAO->Bind();
-	Draw();
+	EBO->Draw();
 
 	return RendererErrors::Okay;
 }
