@@ -7,14 +7,8 @@ public:
 	VertexBuffer();
 	unsigned int GetVBO();
 	void Bind();
-
-	void AddData(std::vector<float> data, int stride);
-	void AddAttributes();
+	
+	void AddAttributes(std::vector<float> data, int stride, std::vector<int> sizes);
 protected:
 	unsigned int VBO;
-	int stride;
-	int numData;
-	std::vector<float> content;
-
-	void BufferData();
 };

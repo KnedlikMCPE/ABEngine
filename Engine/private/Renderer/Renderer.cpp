@@ -13,10 +13,11 @@ Renderer::Renderer(int width, int height, const char* title)
 
 	VAO = new VertexArray();
 	VAO->Bind();
-	
+
+	float arr[] = {0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f};
+	int sizes[] = {3, 3};
 	VBO = new VertexBuffer();
-	VBO->AddData({0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f}, 6);
-	VBO->AddAttributes();
+	VBO->AddAttributes({0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f}, 6, {3, 3});
 	
 	shader = Shader();
 	shader.CompileVertex("shaders/Vertex.vert");

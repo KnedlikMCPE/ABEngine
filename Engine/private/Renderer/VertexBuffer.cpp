@@ -6,8 +6,6 @@
 VertexBuffer::VertexBuffer()
 {
 	glGenBuffers(1, &VBO);
-	numData = 0;
-	stride = 0;
 
 	Bind();
 }
@@ -22,26 +20,19 @@ void VertexBuffer::Bind()
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 }
 
-void VertexBuffer::AddData(std::vector<float> data, int strideIn)
-{
-	content = data;
-	stride = strideIn;
-	numData = stride / 3;
-}
-
-void VertexBuffer::AddAttributes()
-{
-	BufferData();
-	for (int i = 0; i < numData; i++)
-	{
-		glVertexAttribPointer(i, 3, GL_FLOAT, GL_FALSE, stride * sizeof(float),
-		(void*)(i * 3));
-		glEnableVertexAttribArray(i);
-	}
-}
-
-void VertexBuffer::BufferData()
+void VertexBuffer::AddAttributes(std::vector<float> data, int stride, std::vector<int> sizes)
 {
 	Bind();
-	glBufferData(GL_ARRAY_BUFFER, sizeof(float) * content.size(), content.data(), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(float) * data.size(), data.data(), GL_STATIC_DRAW);
+	
+	int numData = sizes.size();
+	int sizeData = 0;
+	
+	for (int i = 0; i <= numData; i++)
+	{
+		glVertexAttribPointer(i, sizes.data()[i], GL_FLOAT, GL_FALSE, stride * sizeof(float),
+		(void*)(i * sizeData));
+		glEnableVertexAttribArray(i);
+		sizeData += sizes.data()[i];
+	}
 }
