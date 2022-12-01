@@ -99,3 +99,8 @@ void Shader::UseUniform(std::string name, int value)
 {
     glUniform1i(glGetUniformLocation(program, name.c_str()), value);
 }
+
+void Shader::UseUniform(std::string name, Vector3 value)
+{
+    glUniform3f( glGetUniformLocation(program, name.c_str()), value.x, value.y, value.z);
+}

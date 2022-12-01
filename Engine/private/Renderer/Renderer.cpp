@@ -4,6 +4,7 @@
 #include "Renderer/Shader.h"
 #include "Renderer/Window.h"
 #include "Renderer/VertexArray.h"
+#include "Vector3.h"
 
 Shader shader;
 
@@ -13,11 +14,9 @@ Renderer::Renderer(int width, int height, const char* title)
 
 	VAO = new VertexArray();
 	VAO->Bind();
-
-	float arr[] = {0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f};
-	int sizes[] = {3, 3};
+	
 	VBO = new VertexBuffer();
-	VBO->AddAttributes({0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f}, 6, {3, 3});
+	VBO->AddAttributes({0.5f, -0.5f, 0.0f, -0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f}, 3, {3});
 	
 	shader = Shader();
 	shader.CompileVertex("shaders/Vertex.vert");
@@ -62,6 +61,7 @@ RendererErrors Renderer::Render()
 
 	shader.Use();
 	VAO->Bind();
+	shader.UseUniform("ourColor", Vector3(1.0, 0.2, 0.0));
 	Draw();
 
 	return RendererErrors::Okay;
