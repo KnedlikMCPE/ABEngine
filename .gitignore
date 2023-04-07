@@ -4,3 +4,4 @@
 *.d
 */obj/
 *.code-workspace
+*/.DS_Store
