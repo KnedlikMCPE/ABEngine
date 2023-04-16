@@ -56,10 +56,13 @@ bool App::shouldClose() {
 }
 
 void App::render() {
+    printf("Rendering!");
     if (error != OK) {
         std::cout << "ERROR: " << error << std::endl;
         return;
     }
+
+    printf("Clearing!");
 
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -68,9 +71,11 @@ void App::render() {
         if (renderObjects[i] == nullptr) {
             continue;
         }
+        printf("Rendering an object!");
         renderObjects[i]->render();
     }
 
+    printf("Swapping buffers!");
     glfwSwapBuffers(window);
     glfwPollEvents();
 }

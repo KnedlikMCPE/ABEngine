@@ -5,3 +5,7 @@ using namespace ABRenderer;
 void RenderObject::render() {
 
 }
+
+RenderObject::~RenderObject() {
+    
+}

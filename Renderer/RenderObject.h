@@ -5,6 +5,7 @@ namespace ABRenderer {
 	class RenderObject {
 	public:
 		virtual void render();
+		virtual ~RenderObject();
 	};
 }
 
