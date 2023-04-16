@@ -1,6 +1,14 @@
 .vscode/
 .vs/
 .idea/
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+RendererTestApp
+*.exe
+*.dll
+*.so
 *.d
 */obj/
 *.code-workspace
